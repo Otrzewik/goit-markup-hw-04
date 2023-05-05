@@ -18,13 +18,15 @@
 
   <body>
     <header class="header">
-    <div class="container header-container"> 
+    <div class="container header-container">
+    <div class="header-set">
     <div class="header-logo-1">
       <a class="header-logo" href="./index.html">
         <span class="logo-part-blue">Web</span>
-        <span class="logo-part-black">Studio</span>
-      </a>
-      </div>
+        Studio
+    </a>
+    </div>
+      
       
       <div class="header-list">
       <nav>
@@ -35,11 +37,33 @@
         </ul>
       </nav>
       </div>
+    </div>
 
       <div class="contact">
+      <div class="mail-svg">
         <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="tel" href="tel:+48111111111">+48 111 111 111</a>
+        <a class="contact-icons">
+        <svg class="mail_icon">
+          <use 
+          width="16"
+          height="12"
+          href="./images/svg/icons.svg#icon-envelope"></use>
+        </svg>
+        </a>
       </div>
+      <div class="tel-svg">
+        <a class="tel" href="tel:+48111111111">+48 111 111 111</a>
+        <a>
+        <svg class="tel_icon">
+          <use 
+          width="16"
+          height="12"
+          href="./images/svg/icons.svg#icon-smartphone"></use>
+        </svg>
+        </a>
+      </div>
+    </div>
+    
     </div>
     </div>
     </header>
@@ -52,7 +76,41 @@
       </section>
       <section class="section2-0">
         <div class="container">
+        <div class="icons-main">
+          <svg>
+            <use 
+            width="70"
+            height="70"
+            href="./images/svg/icons.svg#icon-antenna-1-1"> 
+            </use>
+          </svg>
+
+          <svg>
+            <use 
+            width="70"
+            height="70"
+            href="./images/svg/icons.svg#icon-clock-1-1"> 
+            </use>
+          </svg>
+
+          <svg>
+            <use 
+            width="70"
+            height="70"
+            href="./images/svg/icons.svg#icon-diagram-1-1"> 
+            </use>
+          </svg>
+
+          <svg>
+            <use 
+            width="70"
+            height="70"
+            href="./images/svg/icons.svg#icon-astronaut-1-1"> 
+            </use>
+          </svg>
+        </div>
         <ul class="list-main flex-container">
+          </li>
           <li>
             <h3 class="title-section2-0">Lorem Ipsum</h3>
             <p class="text">
@@ -87,7 +145,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="container">
         <h2 class="headline-section2-1">Czym się zajmujemy</h2>
         <div class="section2-1">
           <ul class="list">
@@ -122,69 +180,262 @@
       </section>
 
       <section class="section3">
-        <div>
+        <div class="container">
           <h2 class="headline-section3">Nasz zespół</h2>
           <div>
             <ul class="list">
-              <li class="figure-index figure-first">
+              <li class="figure-index">
                 <figure class="people-pictures">
                   <img
                     src="/goit-markup-hw-02/images/Main page /main/img3.jpg"
                     alt="Uśmiechnięty męzczyzna z brodą w okularach, ubrany w bordową koszulę."
-                    width="260"
-                    height="270"
+                    width="270"
+                    height="260"
                   />
                   <figcaption class="picture-figcaption">
                     <h3  class="people-names">John Doe</h3>
                     <p class="people-jobs">UI Designer</p>
+                    <div class="people-icons">
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
+                
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
                   </figcaption>
                 </figure>
               </li>
-              <li class="figure-index figure-second">
+              <li class="figure-index">
                 <figure class="people-pictures">
                   <img
                     src="/goit-markup-hw-02/images/Main page /main/img4.jpg"
                     alt="Uśmiechnięta blondynka w okularach, ubrana w czarną marynarkę."
-                    width="260"
-                    height="270"
+                    width="270"
+                    height="260"
                   />
                   <figcaption class="picture-figcaption">
                     <h3 class="people-names">John Doe</h3>
                     <p class="people-jobs-fd">Frontend Developer</p>
+                    <div class="people-icons">
+                        <a class="social-media">
+                          <svg class="people-soc-icon" width="20" height="20">
+                            <use
+                              href="./images/svg/icons.svg#icon-instagram-2-1"
+                            ></use>
+                          </svg>
+                        </a>
+                    
+                        <a class="social-media">
+                          <svg class="people-soc-icon" width="20" height="20">
+                            <use
+                              href="./images/svg/icons.svg#icon-twitter-1-1"
+                            ></use>
+                          </svg>
+                        </a>
+                      
+                        <a class="social-media">
+                          <svg class="people-soc-icon" width="20" height="20">
+                            <use
+                              href="./images/svg/icons.svg#icon-facebook-1-1"
+                            ></use>
+                          </svg>
+                        </a>
+                      
+                        <a class="social-media">
+                          <svg class="people-soc-icon" width="20" height="20">
+                            <use
+                              href="./images/svg/icons.svg#icon-linkedin-1-1"
+                            ></use>
+                          </svg>
+                        </a>
+                      </div>
                   </figcaption>
                 </figure>
               </li>
-              <li class="figure-index figure-third">
+              <li class="figure-index">
                 <figure class="people-pictures">
                   <img
                     src="/goit-markup-hw-02/images/Main page /main/img5.jpg"
                     alt="Uśmiechnięta męzczyzna ubrany w niebieską koszulę"
-                    width="260"
-                    height="270"
+                    width="270"
+                    height="260"
                   />
                   <figcaption class="picture-figcaption">
                     <h3 class="people-names">John Doe</h3>
                     <p class="people-jobs">Marketing</p>
+                    <div class="people-icons">
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
+                
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
                   </figcaption>
                 </figure class="people-pictures">
               </li>
-              <li class="figure-index figure-fourth">
+              <li class="figure-index">
                 <figure class="people-pictures">
                   <img
                     src="/goit-markup-hw-02/images/Main page /main/img6.jpg"
                     alt="Uśmiechnięta męzczyzna w okularach ubrany w czarny tshirt"
-                    width="260"
-                    height="270"
+                    width="270"
+                    height="260"
                   />
                   <figcaption class="picture-figcaption">
                     <h3 class="people-names">John Doe</h3>
                     <p class="people-jobs">UI Designer</p>
+
+                    <div class="people-icons">
+                      <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
+                    
+                
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  
+                    <a class="social-media">
+                      <svg class="people-soc-icon" width="20" height="20">
+                        <use
+                          href="./images/svg/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
                   </figcaption>
                 </figure>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+      </section>
+      <section class="section4">
+        <h2 class="headline-section4">Nasi klienci</h2>
+
+        <div class="clients">
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-1"
+            ></use>
+          </svg>
+        </a>
+        
+    
+        
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-2"
+            ></use>
+          </svg>
+        </a>
+      
+     
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-3"
+            ></use>
+          </svg>
+        </a>
+      
+        
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-4"
+            ></use>
+          </svg>
+        </a>
+
+        
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-5"
+            ></use>
+          </svg>
+        </a>
+
+        
+          <a class="clients-logo">
+          <svg class="clients-logo-svg" width="106" height="60.04">
+            <use
+              href="./images/svg/icons.svg#icon-Logo-6"
+            ></use>
+          </svg>
+        </a>
       </div>
       </section>
     </main>
@@ -194,11 +445,44 @@
         <span class="logo-part-blue">Web</span>
         <span class="logo-part-white">Studio</span>
       </a>
+      <div class="footer-sections">
       <ul class="list-footer">
         <li><address class="address-footer">m. Warszawa, Aleje Jerozolimskie 21</address></li>
         <li><a class="mail-footer" href="mailto:info@example.com">info@example.com</a></li>
         <li><a class="tel-footer" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
+      <ul class="links-footer">
+        <h3 class="footer-title">Dołącz do nas</h3>
+        <a>
+        <svg class="media-footer" width="20" height="20">
+          <use
+            href="./images/svg/icons.svg#icon-instagram_f" 
+          ></use>
+        </svg>
+        </a>
+        <a>
+        <svg class="media-footer" width="20" height="20">
+          <use
+            href="./images/svg/icons.svg#icon-twitter_f"
+          ></use>
+        </svg>
+      </a>
+      <a>
+        <svg class="media-footer" width="20" height="20">
+          <use
+            href="./images/svg/icons.svg#icon-facebook-1-1"
+          ></use>
+        </svg>
+      </a>
+      <a>
+        <svg class="media-footer" width="20" height="20">
+          <use
+            href="./images/svg/icons.svg#icon-linkedin_f"
+          ></use>
+        </svg>
+      </a>
+      </ul>
+      </div>
       </div>
     </footer>
   </body>

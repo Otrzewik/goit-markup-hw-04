@@ -9,6 +9,7 @@
   --brand-color-white60: #ffffff60;
   --brand-color-lightgrey: #757575;
   --footer-mail-tel: #ffffff99;
+  --icons: #AFB1B8
 }
 
 p,
@@ -45,34 +46,25 @@ body {
 /* -- Heaer -- */
 
 .header {
-  background-color: var(--brand-color-white);
-  padding-bottom: 32px;
-  padding-top: 32px;
-  border: 1px solid #ececec;
-  display: flex;
+  border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .header-logo {
   font-family: "Raleway", sans-serif;
+  color: var(--brand-color-black2);
   font-size: 26px;
   text-decoration: none;
   letter-spacing: 0.03em;
   word-spacing: -4px;
-  line-height: 1.38;
+  line-height: 1.17;
   display: flex;
   align-items: center;
-  padding-left: 215px;
-  padding-right: 1240px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo-part-blue {
   color: var(--brand-color-blue);
-}
-
-.logo-part-black {
-  color: var(--brand-color-black2);
 }
 
 .mail {
@@ -81,25 +73,29 @@ body {
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding-left: 371px;
+  padding-right: 50px;
 }
+
+.mail_icon{
+
+}
+
+.contact-icons{
+  
+}
+
 .tel {
   color: var(--brand-color-lightgrey);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding-right: 227px;
-  padding-left: 50px;
 }
 
 .contact {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  flex-direction: row;
-  gap: 50px;
-  align-items: flex-end;
-  padding-left: 371px;
 }
 /* -- Navigation menu -- */
 
@@ -114,28 +110,22 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
-.header-logo-1 {
+.header-set {
   display: flex;
-  padding-left: 215px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-menu {
   list-style-type: none;
   display: flex;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   gap: 46px;
-  padding-right: 557px;
-  padding-left: 453px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 93px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
 }
 
 .link:hover,
@@ -161,7 +151,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -170,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 600px;
+  padding: 200px 0;
 }
 .btn {
   background-color: var(--brand-color-blue);
@@ -183,7 +173,6 @@ body {
   cursor: pointer;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
   padding: 10px 41px 10px 42px;
 }
 
@@ -192,40 +181,13 @@ body {
   background-color: var(--brand-color-white);
 }
 
-.btn2 {
-  background-color: var(--brand-color-grey);
-  border: none;
-  color: var(--brand-color-black);
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-
-.btn2:hover,
-.btn2:focus {
-  color: var(--brand-color-white);
-  background-color: var(--brand-color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .list {
   list-style: none;
 }
 
-.container {
-  padding: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  flex-basis: calc((100%-120px) / 4);
-}
-
 .section1 {
+  background-image: url("./goit-markup-hw-04/images/Main page /main/Img17.jpg");
+  background-position: center;
   background: var(--brand-color-background);
   color: var(--brand-color-white);
   font-size: 44px;
@@ -245,8 +207,13 @@ body {
   max-width: 696px;
 }
 
+.icons-main{
+  display: flex;
+  justify-content: center;
+  padding-top: 119px;
+}
+
 .title-section1-set {
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -273,7 +240,7 @@ body {
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 50px;
 }
 
@@ -283,8 +250,8 @@ body {
   justify-content: space-between;
   flex-direction: row;
   gap: 30px;
-  padding-top: 50px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .list {
@@ -293,7 +260,6 @@ body {
   flex-direction: row;
   padding-bottom: 108px;
   gap: 30px;
-  padding-top: 50px;
   padding-bottom: 94px;
 }
 
@@ -313,25 +279,6 @@ body {
 
 .people-pictures {
   background-color: var(--brand-color-white);
-  width: 270px;
-  height: 368px;
-  top: 1635px;
-  left: 215px;
-}
-
-.figure-first {
-  padding-right: 30px;
-  padding-left: 215px;
-}
-
-.figure-fourth {
-  padding-right: 215px;
-  padding-left: 30px;
-}
-.figure-second,
-.figure-third {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .people-names {
@@ -356,14 +303,38 @@ body {
   align-items: center;
   padding-bottom: 59px;
   flex-direction: column;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+}
+
+.people-icons{
+  display: flex;
+  gap: 34px;
+  padding-top: 16px;
+  box-shadow: #ffffff;
+  border-radius: 50%;
+  
+  
+}
+
+.people-soc-icon{
+  fill: var(--icons);
+  cursor: pointer;
+}
+
+.people-soc-icon:hover{
+fill: #ffffff;
+background-color: #2196f3;
+box-shadow: #2196f3;
+border-radius: 50%;
+border
+}
+
+.social-media{
+  
 }
 
 .people-jobs-fd {
@@ -373,8 +344,6 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-left: 62px;
-  padding-right: 61px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -385,22 +354,45 @@ body {
   line-height: 2;
   color: var(--brand-color-black);
   letter-spacing: 0.06em;
-  width: 322px;
-  height: 36px;
-  top: 576px;
-  left: 239px;
 }
 
 .desctiption {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  width: 322px;
-  height: 30px;
-  top: 616px;
-  left: 239px;
   color: var(--brand-color-lightgrey);
   letter-spacing: 0.03em;
+}
+
+.headline-section4{
+  font-size: 36px;
+  font-style: 700;
+  line-height: 0.85;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+  gap: 30px;
+}
+
+.clients-logo-svg{
+  fill: var(--icons);
+  box-sizing: border-box;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-logo-svg:hover{
+  fill: #2196f3;
+  border-color: #2196f3;
+
 }
 
 /* -- Footer -- */
@@ -411,13 +403,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.03em;
-  word-spacing: -4px;
   line-height: 1.19;
-  list-style-type: none;
-  padding-top: 60px;
-  padding-bottom: 161px;
-  padding-left: 215px;
-  padding-right: 1240px;
   display: flex;
 }
 
@@ -431,15 +417,13 @@ body {
 
 .footer {
   background-color: var(--brand-color-background);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  padding: 60px 0;
 }
 
 .list-footer {
   list-style: none;
   padding-top: 20px;
-  padding-bottom: 60px;
+  gap: 9px;
 }
 
 .address-footer {
@@ -478,15 +462,55 @@ body {
   color: var(--brand-color-blue);
 }
 
+.footer-title{
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.footer-sections{
+  display: flex;
+}
+
+.media-footer{
+  fill: #ffffff;
+}
+
+.media-footer:hover{
+
+}
+
+
 /* -- Portfolio -- */
+
+.btn2 {
+  background-color: var(--brand-color-grey);
+  border: none;
+  color: var(--brand-color-black);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px 22px 6px 22px;
+}
+
+.btn2:hover,
+.btn2:focus {
+  color: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .list-btn2 {
   display: flex;
-  flex-direction: row;
-  padding-right: 8px;
-  padding-left: 510px;
+  justify-content: center;
   padding-top: 100px;
   padding-bottom: 56px;
+  gap: 8px;
 }
 
 .figure-list {
@@ -494,22 +518,12 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-marketing {
-  padding-right: 518px;
-}
-
 .figcaption-portfolio {
   border: 1px solid #eeeeee;
   border-top: none;
+  padding: 20px 24px;
 }
 
-.title-img {
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 54px;
-}
-
-.desctiption {
-  padding-left: 24px;
-  padding-bottom: 50px;
+.figure-portfolio {
+  cursor: pointer;
 }
