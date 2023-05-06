@@ -186,9 +186,8 @@ body {
 }
 
 .section1 {
-  background-image: url("./goit-markup-hw-04/images/Main page /main/Img17.jpg");
+  background-image: url("../images/Main page /main/Img17.jpg");
   background-position: center;
-  background: var(--brand-color-background);
   color: var(--brand-color-white);
   font-size: 44px;
   font-weight: 900;
@@ -211,6 +210,12 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 119px;
+}
+
+.icon-box{
+  padding: 25px 102.34 25 102.34;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .title-section1-set {
@@ -312,12 +317,10 @@ body {
 
 .people-icons{
   display: flex;
-  gap: 34px;
+  justify-content: center;
+  gap: 10px;
   padding-top: 16px;
   box-shadow: #ffffff;
-  border-radius: 50%;
-  
-  
 }
 
 .people-soc-icon{
@@ -326,15 +329,19 @@ body {
 }
 
 .people-soc-icon:hover{
-fill: #ffffff;
-background-color: #2196f3;
-box-shadow: #2196f3;
-border-radius: 50%;
-border
+  fill:#ffffff
 }
 
 .social-media{
-  
+  width: 44px;
+  height: 44px;
+}
+
+.social-media:hover{
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: #2196f3;
+  border-radius: 50%;
 }
 
 .people-jobs-fd {
@@ -405,6 +412,7 @@ border
   letter-spacing: 0.03em;
   line-height: 1.19;
   display: flex;
+  padding-top:60px;
 }
 
 .footer-logo-blue {
@@ -466,14 +474,30 @@ border
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 0.85;
 }
 
 .footer-sections{
   display: flex;
+  
 }
 
+.links-footer{
+  margin-left: 70px;
+  
+
+}
 .media-footer{
   fill: #ffffff;
+  gap: 10px;
+  border-radius: 50%;
+  border-color:rgba(255, 255, 255, 0.1);
+}
+
+.socials-footer{
+border-radius: 50%;
+ ;
 }
 
 .media-footer:hover{
