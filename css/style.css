@@ -76,13 +76,31 @@ body {
   padding-right: 50px;
 }
 
-.mail_icon{
-
-}
-
-.contact-icons{
+.h_icon{
+  display: flex;
   
 }
+
+.mail_icon{
+  width: 16px;
+  height: 12px;
+}
+
+.mail_icon:hover,
+.mail_icon:focus{
+  fill: #2196f3;
+}
+
+.tel_icon:hover,
+.tel_icon:focus{
+  fill: #2196f3;
+}
+
+.tel_icon{
+  width: 16px;
+  height: 12px;
+}
+
 
 .tel {
   color: var(--brand-color-lightgrey);
@@ -208,14 +226,25 @@ body {
 
 .icons-main{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 119px;
 }
 
+.icons_1{
+  padding-top: 119px;
+  padding-bottom: 55px;
+  padding-left: 101.5px;
+}
+
 .icon-box{
-  padding: 25px 102.34 25 102.34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #F5F4FA;
   border-radius: 4px;
+  width: 270px;
+  height: 120px;
+
 }
 
 .title-section1-set {
@@ -328,17 +357,22 @@ body {
   cursor: pointer;
 }
 
-.people-soc-icon:hover{
-  fill:#ffffff
-}
+
 
 .social-media{
   width: 44px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-media:hover{
-  color: #ffffff;
+.people-soc-icon:hover{
+  fill: #ffffff;
+} 
+
+.social-media:hover, 
+.social-media:focus{
   background-color: #2196f3;
   box-shadow: #2196f3;
   border-radius: 50%;
@@ -388,7 +422,9 @@ body {
   padding-bottom: 94px;
   gap: 30px;
 }
-
+.clients-logo{
+  cursor: pointer;
+}
 .clients-logo-svg{
   fill: var(--icons);
   box-sizing: border-box;
@@ -396,7 +432,8 @@ body {
   border-radius: 4px;
 }
 
-.clients-logo-svg:hover{
+.clients-logo-svg:hover, 
+.clients-logo-svg:focus{
   fill: #2196f3;
   border-color: #2196f3;
 
@@ -485,23 +522,37 @@ body {
 
 .links-footer{
   margin-left: 70px;
-  
-
 }
+
+.social-links-f{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+  box-shadow: #ffffff;
+}
+
 .media-footer{
   fill: #ffffff;
   gap: 10px;
-  border-radius: 50%;
   border-color:rgba(255, 255, 255, 0.1);
 }
 
 .socials-footer{
-border-radius: 50%;
- ;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.media-footer:hover{
 
+
+.socials-footer:hover{
+background-color: #2196f3;
 }
 
 
